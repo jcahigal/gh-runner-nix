@@ -10,6 +10,7 @@
      lolcat
      docker
      docker-compose
+     jq
    ];
 
 

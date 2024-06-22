@@ -26,4 +26,6 @@ RUN mkdir -p /app/actions-runner \
 COPY shell.nix /app/actions-runner/shell.nix
 COPY set_up_runner.sh /app/actions-runner/set_up_runner.sh
 
-# ENTRYPOINT ["nix-shell", "--run ", "./set_up_runner.sh"]
+RUN chmod +x /app/actions-runner/set_up_runner.sh
+
+# ENTRYPOINT ["entrypoint.sh"]
